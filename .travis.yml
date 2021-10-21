@@ -6,7 +6,7 @@ before_install:
   - docker build -t anbarasan/react-docker-learning -f Dockerfile.dev .
 
 script:
-  -  docker run anbarasan/react-docker-learning npm run test -- --coverage 
+  - docker run anbarasan/react-docker-learning npm run test -- --coverage 
 
 deploy:
   provider: elasticbeanstalk
