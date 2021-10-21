@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t anbarasan/React-Docker-Learning -f Dockerfile.dev .
+  - docker build -t anbarasan/react-docker-learning -f Dockerfile.dev .
 
 script:
-  -  docker run anbarasan/React-Docker-Learning npm run test -- --coverage 
+  -  docker run anbarasan/react-docker-learning npm run test -- --coverage 
