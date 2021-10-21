@@ -6,4 +6,4 @@ before_install:
   - docker build -t anbarasan/React-Docker-Learning -f Dockerfile.dev .
 
 script:
-  -  docker run anbarasan/React-Docker-Learning npm run test -- --coverage
+  -  docker run anbarasan/React-Docker-Learning npm run test -- --coverage 
